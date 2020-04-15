@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yum install -y git openssl-devel readline-devel zlib-devel
+yum install -y git bzip2 openssl-devel readline-devel zlib-devel
 
 git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv
 git clone git://github.com/sstephenson/ruby-build.git /usr/local/rbenv/plugins/ruby-build
