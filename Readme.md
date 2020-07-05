@@ -19,6 +19,7 @@ OS は CentOS 7 を想定している。
 # chmod 755 /home/username
 # usermod -aG docker username
 # service docker restart
+# visudo
 # su - username
 $ mkdir -m 700 .ssh
 $ curl https://github.com/clown.keys >> .ssh/authorized_keys
