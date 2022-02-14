@@ -26,3 +26,13 @@ $ curl https://github.com/clown.keys >> .ssh/authorized_keys
 $ chmod 600 .ssh/authorized_keys
 $ exit
 ```
+
+### その他
+
+#### docker-compose v1 の削除
+
+docker-compose v2 への移行に伴い、v1 を削除する。
+
+```
+# rm -f /usr/local/bin/docker-compose
+```
