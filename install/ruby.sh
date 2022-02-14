@@ -1,15 +1,6 @@
 #!/bin/sh
 
-yum install -y git bzip2 openssl-devel readline-devel zlib-devel
-
-git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv
-git clone git://github.com/sstephenson/ruby-build.git /usr/local/rbenv/plugins/ruby-build
-
-echo 'export RBENV_ROOT=/usr/local/rbenv' >> /etc/profile
-echo 'export PATH="$RBENV_ROOT/bin:$PATH"' >> /etc/profile
-echo 'eval "$(rbenv init -)"' >> /etc/profile
-source /etc/profile
-
-rbenv install 2.7.0
-rbenv rehash
-rbenv global 2.7.0
+sudo yum -y install centos-release-scl-rh centos-release-scl
+sudo yum --enablerepo=centos-sclo-rh -y install rh-ruby27 rh-ruby27-ruby-devel
+sudo bash -c "echo 'source scl_source enable rh-ruby27' > /etc/profile.d/rh-ruby27.sh"
+sudo bach /etc/profile.d/rh-ruby27.sh
