@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 
-yum install -y git gcc vim
+apt -y install git gcc make vim

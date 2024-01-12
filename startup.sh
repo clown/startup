@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 cd `dirname $0`
-yum update -y
+apt -y update
+apt -yV upgrade
 
 # settings
 cp -pf etc/sysctl.conf /etc/sysctl.conf
