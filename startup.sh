@@ -9,7 +9,7 @@ cp -pf etc/sysctl.conf /etc/sysctl.conf
 sysctl -p
 
 cp -pf etc/sshd_config /etc/ssh/sshd_config
-service sshd restart
+systemctl restart ssh
 
 # others
 source install/tools.sh
