@@ -12,6 +12,7 @@ cp -pf etc/sshd_config /etc/ssh/sshd_config
 systemctl restart ssh
 
 # others
+source install/fail2ban.sh
 source install/tools.sh
 source install/docker.sh
 source install/ruby.sh
