@@ -16,4 +16,3 @@ source install/fail2ban.sh
 source install/tools.sh
 source install/docker.sh
 source install/ruby.sh
-source install/gem.sh
