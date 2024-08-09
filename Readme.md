@@ -18,12 +18,14 @@ OS は CentOS 7 を想定している。
 # passwd username
 # chmod 755 /home/username
 # usermod -aG docker username
-# service docker restart
+# systemctl restart docker
 # visudo
 # su - username
 $ mkdir -m 700 .ssh
 $ curl https://github.com/clown.keys >> .ssh/authorized_keys
 $ chmod 600 .ssh/authorized_keys
+$ rbenv install 3.1.2
+$ rbenv global 3.1.2
 $ exit
 ```
 

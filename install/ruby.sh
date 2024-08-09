@@ -1,5 +1,7 @@
 #!/bin/bash
 
-apt -y install ruby-full
-apt -y install ruby-dev
-ruby --version
+apt -y install rbenv
+apt -y install rubygems libffi-dev
+gem install rake -N
+gem install compass -N
+gem --version
